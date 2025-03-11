@@ -1,0 +1,102 @@
+body{
+    background-color: #FFFFF0;
+    font-family : arial;
+    text-align: center;
+  }
+#one{
+    font-family: Cursive;
+    text-align: center;
+    font-size: 20px;
+}
+button{
+    height: 40px;
+    width: 100px;
+    background-color: #F5EBE0;
+    border-radius: 10px;
+}
+h3,h4{
+    margin:0;
+    padding:0;
+}
+h5{
+    font-family: "Times New Roman"
+}
+p{
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+}
+header {
+    font-family: "Georgia";
+    font-size: 22px;
+ /* Keeps it fixed at the top */
+    margin: 0;
+    padding: 0;
+    top:0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #FFFFF0; /* Adjust as needed */
+    text-align: center; /* Centers the text */
+    padding: 10px 0; /* Adds space inside the header */
+    font-size: 20px; /* Adjust font size if needed */
+    
+}
+
+/* To prevent content from being hidden behind the fixed header */
+body {
+    padding-top: 0px; /* Adjust based on header height */
+}
+
+/* Make the outer container take full viewport height */
+.outer-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Centering the image div inside */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+/* Styling the circular image */
+.profile-pic {
+    background-image: url("My image.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+footer{
+    line-height: 20px;
+}
+/* Default font size for desktops */
+body {
+    font-size: 18px;
+}
+
+/* Medium devices (Tablets: 768px - 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Small devices (Mobile phones: 480px - 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices (Very small phones: below 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}

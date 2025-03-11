@@ -1,0 +1,192 @@
+body{
+  background-color: #FFFFF0;
+  text-align: center;
+  font-family: "Times New Roman"
+}
+#one{
+  font-size: 30px;
+  font-family: "Times New Roman";
+}
+header{
+  font-family: "Georgia";
+    font-size: 22px;
+ /* Keeps it fixed at the top */
+    margin: 0;
+    padding: 0;
+    top:0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #FFFFF0; /* Adjust as needed */
+    text-align: center; /* Centers the text */
+    padding: 10px 0; /* Adds space inside the header */
+    font-size: 20px; /* Adjust font size if needed */
+  line-height: 15px 
+}
+body {
+    font-size: 18px;
+}
+/* Make the outer container take full viewport height */
+.outer-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Centering the image div inside */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+/* Styling the circular image */
+.profile-pic {
+    background-image: url("Instagram.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+/* Make the outer container take full viewport height */
+.outer-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Centering the image div inside */
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+/* Styling the circular image */
+.profile-pic2 {
+    background-image: url("WhatsApp.png");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#three{
+  font-family: "Times New Roman";
+  font-size: 10px;
+}
+/* Make the outer container take full viewport height */
+.outer-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Centering the image div inside */
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+/* Styling the circular image */
+.profile-pic3 {
+    background-image: url("Bluej.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#four{
+  font-family: "Times New Roman";
+  font-size: 30px;
+}
+/* Make the outer container take full viewport height */
+.outer-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Centering the image div inside */
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+/* Styling the circular image */
+.profile-pic4 {
+    background-image: url("VS Code.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#five{
+  font-family: "Times New Roman";
+  font-size: 30px;
+}
+/* Make the outer container take full viewport height */
+.outer-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Centering the image div inside */
+.container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+/* Styling the circular image */
+.profile-pic5 {
+    background-image: url("Code.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#six{
+  font-family: "Times New Roman";
+  font-size: 30px;
+}
+/* Medium devices (Tablets: 768px - 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Small devices (Mobile phones: 480px - 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices (Very small phones: below 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
