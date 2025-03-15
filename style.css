@@ -156,7 +156,7 @@ footer {
     font-family: Engagement;
     font-size: 10px;
     text-align: center;
-    padding: 10px 0; /* Reduce excessive padding */
+    padding: 15px 0; /* Reduce excessive padding */
     line-height: 10px; /* Uniform text spacing */
 }
 /*#four{
