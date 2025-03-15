@@ -157,7 +157,7 @@ footer {
     font-size: 14px;
     text-align: center;
     padding: 10px 0; /* Reduce excessive padding */
-    line-height: 1.5; /* Uniform text spacing */
+    line-height: 5px; /* Uniform text spacing */
 }
 /*#four{
     line-height: 5px;*/
