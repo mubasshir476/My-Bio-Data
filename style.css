@@ -1,10 +1,59 @@
 body{
-    background-color: #FFFFF0;
-    font-family : arial;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    background-color: rgba(251,233,215,0.75);
+    font-family :;
     text-align: center;
+    margin: 0;
+    padding-top: 80px;
   }
+#header2{
+    width: 100%;
+    padding-top: 60px;
+    background-color: #FBE9D7;
+}
+#navbar{
+    position : fixed;
+    display: flex;
+    padding: 0 20;
+  height: 50px;
+    width: 100%;
+  background-image: url(coolor.png);
+    gap: 60px;
+    background-size: cover;
+    justify-content: center;
+    align-items:  center;
+    text-decoration: none;
+}
+#navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+#navbar a:hover {
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 12px; /* Ensures spacing inside the border */
+    cursor: pointer;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255,255,240);
+    width: 90%;
+    border-radius: 30px;
+    padding: -5px;
+    margin: auto;
+     margin-bottom : 25px;
+    z-index: -2;
+     
+}
+
 #one{
-    font-family: Cursive;
+    font-family: Cookie;
     text-align: center;
     font-size: 20px;
 }
@@ -22,11 +71,15 @@ h5{
     font-family: "Times New Roman"
 }
 p{
-    font-size: 18px;
-    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    font-family: Corinthia;
+}
+.three{
+    font-family: Engagement;
+    line-height: 2px;
 }
 header {
-    font-family: "Georgia";
+    font-family: "Pacifico";
     font-size: 22px;
  /* Keeps it fixed at the top */
     margin: 0;
@@ -40,6 +93,11 @@ header {
     font-size: 20px; /* Adjust font size if needed */
     
 }
+header:hover{
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+} 
+    
 
 /* To prevent content from being hidden behind the fixed header */
 body {
@@ -60,6 +118,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%; /* Ensure full width */
+    
 }
 
 /* Styling the circular image */
@@ -67,13 +126,44 @@ body {
     background-image: url("My image.jpg");
     background-size: cover;
     background-position: center;
-    border: 2px solid black;
+    border: 5px solid black;
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    animation: rotate-border 10s linear 0s 1 normal;
+    z-index: -1;
+    
 }
-footer{
-    line-height: 20px;
+.profile-pic:hover{
+    
+}
+@keyframes rotate-border {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+footer {
+    position: relative; /* Ensures it stays at the bottom within content flow */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #FBE9D7;
+    font-family: Engagement;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0; /* Reduce excessive padding */
+    line-height: 1.5; /* Uniform text spacing */
+}
+/*#four{
+    line-height: 5px;*/
+}
+#five{
+    font-family: Times New Roman;
 }
 /* Default font size for desktops */
 body {
