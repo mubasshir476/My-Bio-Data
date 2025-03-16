@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     z-index: 1000; /* Ensures navbar stays on top of other content */
     cursor: pointer;
 }
