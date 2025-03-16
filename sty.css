@@ -25,6 +25,19 @@ body {
     font-weight: bold;
     
 }
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255,255,240);
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: -5px;
+    margin: auto;
+     margin-bottom : 25px;
+    z-index: -2;
+}
 #navbar a:hover {
   color: black;
     border: 2px solid black;
@@ -51,6 +64,14 @@ h2:hover{
     text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
     cursor: pointer;
 } 
+@keyframes img1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 /* General styling for all images */
 .profile-pic, .profile-pic3, .profile-pic4 {
@@ -60,6 +81,9 @@ h2:hover{
     background-position: center;
     display: block;
     margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 normal forwards;
 }
 
 /* Image 2 (HTML) - Different size */
@@ -71,6 +95,20 @@ h2:hover{
     background-position: center;
     display: block;
     margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 reverse;
+}
+.profile-pic4 {
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 reverse;
 }
 
 /* Set background images for the other profile pictures */
