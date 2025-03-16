@@ -24,6 +24,44 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255,255,240);
+    border: 2px solid black;
+    width: 80%;
+    border-radius: 30px;
+    padding: -5px;
+    margin: auto;
+     margin-bottom : 25px;
+    z-index: -2;
+}
+
+button{
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    background-color: #F5EBE0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#abc:hover{
+    background-color: #D62976;
+    color: white;
+}
+#def:hover{
+    background-color: #075E54;
+    color: white;
+}
+/*@keyframes colorchange {
+    from {
+        background-color: #F5EBE0;
+    }
+    to {
+        background-color: blueviolet;"/
+    }
+}*/
 #navbar a:hover {
     color: black;
     border: 2px solid black;
@@ -32,23 +70,23 @@ body {
     cursor: pointer;
 }
 #one {
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Ubuntu";
 }
 #three{
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Ubuntu";
 }
 #four{
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Ubuntu";
 }
 #five{
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Ubuntu";
 }
 #six{
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Ubuntu";
 }
 
@@ -78,6 +116,12 @@ h2:hover{
     align-items: center;
     width: 100%;
 }
+@keyframes img1{
+   0%{margin-left:100%;}
+}
+@keyframes img2{
+   0%{margin-right:100%;}
+}
 
 .profile-pic {
     background-image: url("Instagram.png");
@@ -86,16 +130,19 @@ h2:hover{
     border: 2px solid black;
     height: 150px;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 35px;
+    animation: img1 5s linear 1s 1 normal forwards;
 }
 
 .profile-pic2 {
     background-image: url("WhatsApp.png");
     background-size: cover;
     background-position: center;
+    border: 2px solid black;
     height: 150px;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 10px;
+    animation: img2 5s linear 1s 1 normal forwards;
 }
 
 .profile-pic3 {
@@ -105,7 +152,8 @@ h2:hover{
     border: 2px solid black;
     height: 150px;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 10px;
+    animation: img1 5s linear 1s 1 normal forwards;
 }
 
 .profile-pic4 {
@@ -115,7 +163,8 @@ h2:hover{
     border: 2px solid black;
     height: 150px;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 10px;
+    animation: img2 5s linear 1s 1 normal forwards;
 }
 
 .profile-pic5 {
@@ -125,7 +174,8 @@ h2:hover{
     border: 2px solid black;
     height: 150px;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 10px;
+    animation: img1 5s linear 1s 1 normal forwards;
 }
 
 h4 {
