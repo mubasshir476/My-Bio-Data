@@ -20,7 +20,7 @@ body{
   height: 50px;
     width: 100%;
   background-image: url(coolor.png);
-    gap: 10px;
+    gap: 15px;
     background-size: cover;
     justify-content: center;
     align-items:  center;
