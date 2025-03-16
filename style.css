@@ -20,7 +20,7 @@ body{
   height: 50px;
     width: 100%;
   background-image: url(coolor.png);
-    gap: 40px;
+    gap: 60px;
     background-size: cover;
     justify-content: center;
     align-items:  center;
@@ -43,6 +43,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: rgb(255,255,240);
+    border: 2px solid black;
     width: 90%;
     border-radius: 30px;
     padding: -5px;
@@ -55,7 +56,7 @@ body{
 #one{
     font-family: Cookie;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 button{
     height: 40px;
@@ -76,7 +77,8 @@ p{
 }
 .three{
     font-family: Engagement;
-    line-height: 25px;
+    line-height: 0px;
+    font-size: 20px;
 }
 header {
     font-family: "Pacifico";
@@ -134,9 +136,6 @@ body {
     z-index: -1;
     
 }
-.profile-pic:hover{
-    
-}
 @keyframes rotate-border {
   0% {
     transform: scale(0);
@@ -154,13 +153,10 @@ footer {
     width: 100%;
     background-color: #FBE9D7;
     font-family: Engagement;
-    font-size: 10px;
+    font-size: 9px;
     text-align: center;
-    padding: 25px 0; /* Reduce excessive padding */
-    line-height: 10px; /* Uniform text spacing */
-}
-/*#four{
-    line-height: 5px;*/
+    padding: 10px 0; /* Reduce excessive padding */
+    line-height: 0px; /* Uniform text spacing */
 }
 #five{
     font-family: Times New Roman;
