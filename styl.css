@@ -182,15 +182,23 @@ h4 {
     font-family: "Pacifico";
 }
 
-/* Responsive Design */
+/* Medium devices (Tablets: 768px - 1024px) */
 @media (max-width: 1024px) {
-    body { font-size: 16px; }
+    body {
+        font-size: 16px;
+    }
 }
 
+/* Small devices (Mobile phones: 480px - 768px) */
 @media (max-width: 768px) {
-    body { font-size: 14px; }
+    body {
+        font-size: 14px;
+    }
 }
 
+/* Extra small devices (Very small phones: below 480px) */
 @media (max-width: 480px) {
-    body { font-size: 12px; }
+    body {
+        font-size: 12px;
+    }
 }
