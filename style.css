@@ -163,14 +163,14 @@ footer {
 }
 /* Styles for tablets (e.g., iPads) */
 @media screen and (min-width: 768px) {
-    .navbar {
+    #navbar {
         gap: 30px; /* Moderate gap for tablets */
     }
 }
 
 /* Styles for desktops */
 @media screen and (min-width: 1024px) {
-    .navbar {
+    #navbar {
         gap: 80px; /* Larger gap for desktops */
     }
 }
