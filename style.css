@@ -120,6 +120,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%; /* Ensure full width */
+margin-top: 5px;
     
 }
 
