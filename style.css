@@ -161,6 +161,19 @@ footer {
 #five{
     font-family: Times New Roman;
 }
+/* Styles for tablets (e.g., iPads) */
+@media screen and (min-width: 768px) {
+    .navbar {
+        gap: 30px; /* Moderate gap for tablets */
+    }
+}
+
+/* Styles for desktops */
+@media screen and (min-width: 1024px) {
+    .navbar {
+        gap: 80px; /* Larger gap for desktops */
+    }
+}
 /* Default font size for desktops */
 body {
     font-size: 18px;
