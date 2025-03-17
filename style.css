@@ -22,6 +22,7 @@ body{
   background-image: url(coolor.png);
     gap: 15px;
     background-size: cover;
+font-family: "Ubuntu";
     justify-content: center;
     align-items:  center;
     text-decoration: none;
