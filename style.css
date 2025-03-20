@@ -1,35 +1,37 @@
 body{
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 0px;
     background-color: rgba(251,233,215,0.75);
     font-family :;
     text-align: center;
     margin: 0;
-    padding-top: 80px;
   }
 #header2{
     width: 100%;
     padding-top: 60px;
     background-color: #FBE9D7;
 }
-#navbar{
-    position : fixed;
+#navbar {
+    position: fixed;
     display: flex;
-    padding: 0 20;
-  height: 50px;
+    padding: 0 20px; /* Added unit */
+    height: 60px;
     width: 100%;
-  background-image: url(coolor.png);
     gap: 15px;
+    background-image: url("coolor.png");
     background-size: cover;
-font-family: "Ubuntu";
-    justify-content: center;
-    align-items:  center;
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
+    box-sizing: border-box; /* Ensures padding doesn’t increase the width */
+    flex-wrap: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Prevents overflow */
 }
 #navbar a{
     text-decoration: none;
     font-weight: bold;
+    font-family: "Ubuntu";
     
 }
 #navbar a:hover {
@@ -121,8 +123,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%; /* Ensure full width */
-margin-top: 25px;
-margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     
 }
 
@@ -164,22 +166,36 @@ footer {
 #five{
     font-family: Times New Roman;
 }
-/* Styles for tablets (e.g., iPads) */
-@media screen and (min-width: 768px) {
-    #navbar {
-        gap: 30px; /* Moderate gap for tablets */
-    }
-}
-
-/* Styles for desktops */
-@media screen and (min-width: 1024px) {
-    #navbar {
-        gap: 80px; /* Larger gap for desktops */
-    }
-}
 /* Default font size for desktops */
 body {
     font-size: 18px;
+}
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) {
+    #navbar {
+        gap: 25px; /* Increase gap slightly */
+        height: 85px
+    }
+    #navbar a {
+        font-size: 26px;
+    /* Moderate spacing */
+    }
+}
+
+/* Desktops (1024px - 1200px) */
+@media (min-width: 1024px) {
+    #navbar {
+        gap: 45px; /* More spacing for readability */
+        height: 105px;
+    }
+}
+
+/* Large Screens (Above 1200px) */
+@media (min-width: 1200px) {
+    #navbar {
+        gap: 60px; /* Extra spacing for large screens */
+        height: 125px
+    }
 }
 
 /* Medium devices (Tablets: 768px - 1024px) */
