@@ -2,27 +2,32 @@ body {
     background-color: rgba(251,233,215,0.50);
     text-align: center;
     font-family: "Times New Roman";
-    padding-top: 40px; /* Added this to push content below navbar */
+    padding-top: 0px; /* Added this to push content below navbar */
+    margin: 0;
 }
-
+#me{
+    padding-top: 60px;
+}
 #navbar {
     position: fixed;
-    top: 0; /* Ensure it's at the very top */
-    left: 0; /* Ensure it spans full width */
-    width: 100%;
-    height: 50px;
-    background-image: url(coolor.png);
-    background-size: cover;
     display: flex;
-    justify-content: center;
+    padding: 0 20px; /* Added unit */
+    height: 60px;
+    width: 100%;
+    gap: 15px;
+    background-image: url("coolor.png");
+    background-size: cover;
+    justify-content: space-between;
     align-items: center;
-    gap: 60px;
-    z-index: 1000; /* Ensures navbar stays on top of other content */
+    text-decoration: none;
+    box-sizing: border-box; /* Ensures padding doesn’t increase the width */
+    flex-wrap: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Prevents overflow */
 }
-
 #navbar a {
     text-decoration: none;
     font-weight: bold;
+    font-family: "Ubuntu";
 }
 .section{
     display: flex;
@@ -182,10 +187,10 @@ h4 {
     font-family: "Pacifico";
 }
 
-/* Medium devices (Tablets: 768px - 1024px) */
-@media (max-width: 1024px) {
+/* Extra small devices (Very small phones: below 480px) */
+@media (max-width: 480px) {
     body {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
@@ -196,9 +201,45 @@ h4 {
     }
 }
 
-/* Extra small devices (Very small phones: below 480px) */
-@media (max-width: 480px) {
+/* Medium devices (Tablets: 768px - 1024px) */
+@media (max-width: 1024px) {
     body {
-        font-size: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) {
+    #navbar {
+        gap: 25px; /* Increase gap slightly */
+        height: 85px;
+    }
+    #navbar a {
+        font-size: 26px; /* Moderate spacing */
+    }
+    #me {
+        padding-top: 85px; /* Match navbar height */
+    }
+}
+
+/* Desktops (1024px - 1200px) */
+@media (min-width: 1024px) {
+    #navbar {
+        gap: 45px; /* More spacing for readability */
+        height: 105px;
+    }
+    #me {
+        padding-top: 105px; /* Match navbar height */
+    }
+}
+
+/* Large Screens (Above 1200px) */
+@media (min-width: 1200px) {
+    #navbar {
+        gap: 60px; /* Extra spacing for large screens */
+        height: 125px;
+    }
+    #me {
+        padding-top: 125px; /* Match navbar height */
     }
 }
