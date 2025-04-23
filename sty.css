@@ -9,9 +9,20 @@ body {
 h2{
     width: 100%;
     padding-top: 150px;
+    
 }
 #me{
-    padding-top: 60px;
+    padding-top: 70px;
+}
+#butt{
+    background-color: rgb(251,233,215);
+    text-align: center;
+    border-radius: 40px;
+    height: 25px;
+    width: 85%;
+    font-family: "Ubuntu";
+    font-size: 20px;
+    border-radius: 15px;
 }
 #navbar {
     position: fixed;
@@ -153,6 +164,62 @@ h2:hover{
     align-items: center;
     width: 100%;
     margin: 20px 0;
+}
+//* Image Container for Two Images */
+.two-images {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Align them vertically */
+    gap: 20px; /* Space between images */
+}
+
+/* Image Container for Three Images */
+.three-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* For Two Images */
+.two-images img {
+    width: 45%; /* Ensures two images fit side by side */
+}
+
+/* For Three Images */
+.three-images img {
+    width: 30%; /* Ensures three images fit side by side */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .two-images,
+    .three-images {
+        flex-wrap: wrap;
+    }
+
+    .two-images img,
+    .three-images img {
+        width: 100%; /* Stack images on smaller screens */
+    }
+}
+/* Responsive: Stack images on smaller screens */
+@media (max-width: 768px) {
+    .image-container {
+        flex-wrap: wrap;
+    }
+    .two-images img, 
+    .three-images img {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
 /* Tablets (768px - 1024px) */
 @media (min-width: 768px) {
