@@ -6,11 +6,16 @@ body{
     font-family :;
     text-align: center;
     margin: 0;
+    z-index: -99
   }
 #header2{
     width: 100%;
-    padding-top: 60px;
+    padding-top: 20px;
     background-color: #FBE9D7;
+}
+#p{
+    padding-top: 40px;
+    background-color: "Black"
 }
 #navbar {
     position: fixed;
@@ -27,6 +32,7 @@ body{
     box-sizing: border-box; /* Ensures padding doesn’t increase the width */
     flex-wrap: nowrap; /* Prevents text from wrapping */
     overflow: hidden; /* Prevents overflow */
+    z-index: 10000;
 }
 #navbar a{
     text-decoration: none;
@@ -34,12 +40,32 @@ body{
     font-family: "Ubuntu";
     
 }
+img{
+    height: 20px;
+}
 #navbar a:hover {
     color: black;
     border: 2px solid black;
     border-radius: 5px; /* Rounded corners */
     padding: 8px 12px; /* Ensures spacing inside the border */
     cursor: pointer;
+}
+#switch-box {
+    padding-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Col.png"); /* Light transparent background */
+    background-size: cover;
+    height: 55px;
+    width: 100%;
+    margin: 0px auto; /* Center it */
+    padding: 0px;
+    
+}
+#switch-box p{
+    font-family: "Ubuntu";
+    font-size: 12px;
 }
 #box{
     display: flex;
@@ -52,7 +78,7 @@ body{
     padding: -5px;
     margin: auto;
      margin-bottom : 25px;
-    z-index: -2;
+    
      
 }
 
@@ -73,6 +99,415 @@ h3,h4{
 }
 h5{
     font-family: "Times New Roman"
+}
+p{
+    font-size: 28px;
+    font-family: Corinthia;
+}
+.three{
+    font-family: Engagement;
+    line-height: 0px;
+    font-size: 20px;
+}
+header {
+    font-family: "Pacifico";
+    font-size: 22px;
+ /* Keeps it fixed at the top */
+    margin: 0;
+    padding: 0;
+    top:0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #FFFFF0; /* Adjust as needed */
+    text-align: center; /* Centers the text */
+    padding: 10px 0; /* Adds space inside the header */
+    font-size: 20px; /* Adjust font size if needed */
+
+}
+header:hover{
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+} 
+
+
+/* To prevent content from being hidden behind the fixed header */
+body {
+    padding-top: 0px; /* Adjust based on header height */
+}
+
+/* Make the outer container take full viewport height */
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    z-index: 1000;
+}
+
+.profile-pic {
+    background-image: url("My image.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white; /* White border */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    animation: rotate-border 10s linear 0s 1 normal;
+    z-index: 1000;
+}
+
+@keyframes rotate-border {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Default Light Mode Styles */
+body{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    background-color: rgba(251,233,215,0.75);
+    font-family :;
+    text-align: center;
+    margin: 0;
+  }
+
+.switch {
+    position: ;
+    top: 28px;
+    left: 60px;
+    width: 50px;
+    height: 25px;
+    z-index: 0;
+}
+
+/* Hide the checkbox */
+.switch input {
+    display: none;
+}
+
+/* Default slider style */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    background-color: white; /* Default color */
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+/* Circle inside the switch */
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 3px;
+    transition: 0.3s;
+}
+
+/* When checkbox is checked */
+.switch input:checked + .slider {
+    background-color: lightgreen; /* Change background when ON */
+}
+
+/* Move the circle to the right when ON */
+.switch input:checked + .slider::before {
+    transform: translateX(25px);
+}
+
+/* When checkbox is checked, apply dark mode */
+:has(#mode-toggle:checked) {
+     body{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    background-color: rgba(20,33,61,0.90); /* Dark background */
+    color: #E0E0E0; /* Light text */
+    font-family: ;
+    text-align: center;
+    margin: 0;
+}
+
+#header2 {
+    width: 100%;
+    padding-top: 20px;
+    background-color: rgb(20,33,61);/* Dark header */
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    gap: 15px;
+    background-image: url("C.png") ; /* Dark navbar */
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
+}
+
+#navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Ubuntu";
+    color: beige;
+}
+
+#navbar a:hover {
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+    .slider {
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    background-color: blue; /* Default color */
+    border-radius: 25px;
+    transition: 0.3s;
+}
+#switch-box {
+    padding-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Cl.png"); /* Light transparent background */
+    background-size: cover;
+    height: 55px;
+    width: 100%;
+    margin: 0px auto; /* Center it */
+    padding: 0px;
+    color: white;
+}
+    #switch-box p{
+    font-family: "Ubuntu";
+    font-size: 12px;
+}
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(34,34,59,0.25); /* Darker box */
+    border: 2px solid white;
+    width: 90%;
+    border-radius: 30px;
+    padding: -5px;
+    margin: auto;
+    margin-bottom: 25px;
+    z-index: -2;
+}
+
+#one {
+    font-family: Cookie;
+    text-align: center;
+    font-size: 18px;
+    color: #E0E0E0;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    background-color: #444444; /* Dark button */
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #E0E0E0;
+}
+
+h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-family: "Times New Roman";
+    color: #E0E0E0;
+}
+
+p {
+    font-size: 28px;
+    font-family: Corinthia;
+    color: #E0E0E0;
+}
+
+.three {
+    font-family: Engagement;
+    line-height: 0px;
+    font-size: 20px;
+    color: #E0E0E0;
+}
+
+header {
+    font-family: "Pacifico";
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222222; /* Dark header */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #E0E0E0;
+}
+
+header:hover {
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    background-image: url("My image.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white; /* White border */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    animation: rotate-border 10s linear 0s 1 normal;
+    z-index: -1;
+}
+
+@keyframes rotate-border {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(20,33,61);
+    font-family: Engagement;
+    font-size: 9px;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 0px;
+    color: #E0E0E0;
+}
+
+#five {
+    font-family: Times New Roman;
+    color: #E0E0E0;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    #navbar {
+        gap: 25px;
+        height: 85px;
+    }
+    #navbar a {
+        font-size: 26px;
+    }
+    #switch_box {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    #navbar {
+        gap: 45px;
+        height: 105px;
+    }
+    #switch_box {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    #navbar {
+        gap: 60px;
+        height: 125px;
+    }
+    #switch_box {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    #switch_box {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    #switch_box {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    #switch_box {
+        display: block;
+    }
+}
+}
+
+:has(#mode-toggle:checked) .slider {
+    background-color: lightgreen;
+}
+
+:has(#mode-toggle:checked) .slider::before {
+    transform: translateX(25px);
 }
 p{
     font-size: 28px;
@@ -180,6 +615,9 @@ body {
         font-size: 26px;
     /* Moderate spacing */
     }
+    #switch_box {
+        display: block;
+    }
 }
 
 /* Desktops (1024px - 1200px) */
@@ -187,6 +625,9 @@ body {
     #navbar {
         gap: 45px; /* More spacing for readability */
         height: 105px;
+    }
+    #switch_box {
+        display: block;
     }
 }
 
@@ -196,12 +637,18 @@ body {
         gap: 60px; /* Extra spacing for large screens */
         height: 125px
     }
+    #switch_box {
+        display: block;
+    }
 }
 
 /* Medium devices (Tablets: 768px - 1024px) */
 @media (max-width: 1024px) {
     body {
         font-size: 16px;
+    }
+    #switch_box {
+        display: block;
     }
 }
 
@@ -210,11 +657,17 @@ body {
     body {
         font-size: 14px;
     }
+    #switch_box {
+        display: block;
+    }
 }
 
 /* Extra small devices (Very small phones: below 480px) */
 @media (max-width: 480px) {
     body {
         font-size: 12px;
+    }
+    #switch_box {
+        display: block;
     }
 }
