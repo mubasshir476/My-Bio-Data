@@ -6,7 +6,17 @@ body {
     margin: 0;
 }
 #me{
-    padding-top: 60px;
+    padding-top: 70px;
+}
+#butt{
+    background-color: rgb(251,233,215);
+    text-align: center;
+    border-radius: 40px;
+    height: 25px;
+    width: 85%;
+    font-family: "Ubuntu";
+    font-size: 20px;
+    border-radius: 15px;
 }
 #navbar {
     position: fixed;
