@@ -72,6 +72,7 @@ h2{
     box-shadow: 0 0 0 2px beige; /* Simulates an outline with rounded corners */
     background-color: rgba(0, 0, 0, 0.1); /* Optional: Adds a slight background effect */
 }
+
 /* Styling for headings */
 h2 {
         
@@ -101,6 +102,26 @@ h2:hover{
         transform: rotate(360deg);
     }
 }
+@keyframes img3 {
+  0% {
+    transform: translateY(90%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes img4 {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /* Video Styling */
 .hobby-video {
     width: 90%;
@@ -108,7 +129,11 @@ h2:hover{
     height: 400px;
    /* height: auto;*/
     border-radius: 35px;
+        animation: img3 5s linear 1s 1 normal forwards;
     margin-top: 5px;
+}
+#animate {
+            animation: img4 5s linear 1s 1 normal forwards;
 }
 
 /* General styling for all images */
