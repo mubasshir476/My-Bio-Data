@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mubasshir's Codeverse</title>
     
     <!-- Google Fonts -->
@@ -12,14 +13,29 @@
     
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+    <style>
+  body {
+    filter: blur(15px);
+    opacity: 0;
+    animation: blurIn 3s ease-out forwards;
+  }
+
+  @keyframes blurIn {
+    to {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+</style>
 </head>
 <body>
 
     <!-- Navbar -->
-  <div id="navbar">
-  <a href='/'>Home</a>
+  <div id= "navbar">
+  <a href= "index.html">Home</a>
   <a href="Education.html">Education</a>
-        <a href='/application'>Applications</a>
+        <a href="application.html"'>Applications</a>
+       <a href="hobbies.html"'>Hobbies</a>
       <a href="https://chatgpt.com/">Open AI</a>
      
   </div>
