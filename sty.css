@@ -101,9 +101,32 @@ h2:hover{
     height: 400px;
    /* height: auto;*/
     border-radius: 35px;
+    animation: img3 5s linear 1s 1 normal forwards;
     margin-top: 5px;
 }
-
+#animate{
+    animation: img4 5s linear 1s 1 normal forwards;
+}
+@keyframes img3 {
+  0% {
+    transform: translateY(90%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes img4 {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /* General styling for all images */
 .profile-pic, .profile-pic3, .profile-pic4 {
     width: 200px;
