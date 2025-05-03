@@ -7,6 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Corinthia:wght@400;700&family=Engagement&family=Luxurious+Script&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="sty.css">
+    <style>
+  body {
+    transform: translateY(150px);
+    opacity: 0;
+    animation: slideIn 5s ease-out forwards;
+  }
+
+  @keyframes slideIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>
 </head>
 <body>
       <!-- Navbar -->
@@ -14,6 +28,7 @@
   <a href="index.html">Home</a>
   <a href="Education.html">Education</a>
         <a href="application.html">Applications</a>
+      <a href="hobbies.html">Hobbies</a>
       <a href="https://chatgpt.com/">Open AI</a>
   </div>
     </div>
