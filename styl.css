@@ -1,14 +1,20 @@
+/* Apply background color */
 body {
     background-color: rgba(251,233,215,0.50);
     text-align: center;
-    font-family: "Times New Roman";
-    padding-top: 0px; /* Added this to push content below navbar */
+    font-family: "Ubuntu";
+    padding-top: 0px;
     margin: 0;
 }
-#me{
-    padding-top: 90px;
+h2{
+    width: 100%;
+    padding-top: 150px;
+    
 }
-#butt{
+#me{
+    padding-top: 70px;
+}
+.butt{
     background-color: rgb(251,233,215);
     text-align: center;
     border-radius: 40px;
@@ -17,6 +23,24 @@ body {
     font-family: "Ubuntu";
     font-size: 20px;
     border-radius: 15px;
+}
+button{
+    background-color: rgb(251,233,215);
+    text-align: center;
+    border-radius: 400px;
+    height: 30px;
+    width: 120px;
+    font-family: "Ubuntu";
+    font-size: 13px;
+    border-radius: 15px;
+}
+.abc:hover{
+    background-color: #D62976;
+    color: white;
+}
+.def:hover{
+    background-color: #075E54;
+    color: white;
 }
 #navbar {
     position: fixed;
@@ -33,80 +57,42 @@ body {
     box-sizing: border-box; /* Ensures padding doesn’t increase the width */
     flex-wrap: nowrap; /* Prevents text from wrapping */
     overflow: hidden; /* Prevents overflow */
+    z-index: 1000;
 }
-#navbar a {
+#navbar a{
     text-decoration: none;
     font-weight: bold;
     font-family: "Ubuntu";
+    font-size: 12px;
+}
+#navbar a:hover {
+    padding: 10px;
+    color: burlywood;
+    box-shadow: 0 0 0 2px beige; /* Simulates an outline with rounded corners */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: Adds a slight background effect */
 }
 .section{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(255,255,240);
+    width: 90%;
     border: 2px solid black;
-    width: 80%;
     border-radius: 30px;
     padding: -5px;
     margin: auto;
      margin-bottom : 25px;
     z-index: -2;
 }
-
-button{
-    height: 30px;
-    width: 120px;
-    text-align: center;
-    background-color: #F5EBE0;
-    border-radius: 20px;
-    cursor: pointer;
-}
-#abc:hover{
-    background-color: #D62976;
-    color: white;
-}
-#def:hover{
-    background-color: #075E54;
-    color: white;
-}
-/*@keyframes colorchange {
-    from {
-        background-color: #F5EBE0;
-    }
-    to {
-        background-color: blueviolet;"/
-    }
-}*/
 #navbar a:hover {
-    color: black;
+  color: black;
     border: 2px solid black;
     border-radius: 5px; /* Rounded corners */
     padding: 8px 12px; /* Ensures spacing inside the border */
-    cursor: pointer;
 }
-#one {
-    font-size: 25px;
-    font-family: "Ubuntu";
-}
-#three{
-    font-size: 25px;
-    font-family: "Ubuntu";
-}
-#four{
-    font-size: 25px;
-    font-family: "Ubuntu";
-}
-#five{
-    font-size: 25px;
-    font-family: "Ubuntu";
-}
-#six{
-    font-size: 25px;
-    font-family: "Ubuntu";
-}
-
+/* Styling for headings */
 h2 {
-    padding-top: 70px;
+        
     font-family: "Pacifico";
     font-size: 22px;
     margin: 0;
@@ -124,90 +110,188 @@ h2:hover{
     text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
     cursor: pointer;
 } 
+@keyframes img1 {
+  0% {
+    transform: translateX(90%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes img2 {
+  0% {
+    transform: translateX(-90%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Video Styling */
+.hobby-video {
+    width: 90%;
+    max-width: 500px; /* Adjusts to the same size as images */
+    height: 400px;
+   /* height: auto;*/
+    border-radius: 35px;
+    margin-top: 5px;
+}
 
-.container, .container2, .container3, .container4, .container5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+/* General styling for all images */
+.profile-pic, .profile-pic3, .profile-pic4, .profile-pic5 {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 normal forwards;
+    margin-bottom: 15px;
 }
-@keyframes img1{
-   0%{margin-left:100%;}
+.profile-pic{
+    border-radius: 35px;
 }
-@keyframes img2{
-   0%{margin-right:100%;}
+.profile-pic5{
+        background-image: url("Code.jpg");
+  animation:   img1 5s linear 1s 1 normal forwards;
+}
+/* Image 2 (HTML) - Different size */
+.profile-pic2 {
+    width: 150px;
+    height: 150px;
+    background-image: url("Whatsapp.png");
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    animation: img2 5s linear 1s 1 normal;
+}
+.profile-pic4 {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 reverse;
+    margin-bottom: 15px;
 }
 
+/* Set background images for the other profile pictures */
 .profile-pic {
     background-image: url("Instagram.png");
-    background-size: cover;
-    background-position: center;
-    border: 2px solid black;
-    height: 150px;
-    width: 150px;
-    border-radius: 35px;
-    animation: img1 5s linear 1s 1 normal forwards;
-}
-
-.profile-pic2 {
-    background-image: url("WhatsApp.png");
-    background-size: cover;
-    background-position: center;
-    border: 2px solid black;
-    height: 150px;
-    width: 150px;
-    border-radius: 10px;
-    animation: img2 5s linear 1s 1 normal forwards;
 }
 
 .profile-pic3 {
     background-image: url("Bluej.png");
-    background-size: cover;
-    background-position: center;
-    border: 2px solid black;
-    height: 150px;
-    width: 150px;
-    border-radius: 10px;
-    animation: img1 5s linear 1s 1 normal forwards;
 }
 
 .profile-pic4 {
     background-image: url("VS Code.png");
-    background-size: cover;
-    background-position: center;
-    border: 2px solid black;
-    height: 150px;
-    width: 150px;
+}
+
+/* Centering Containers */
+.container, .container2, .container3, .container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+/* Image Container for Two Images */
+.two-images {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Align them vertically */
+    gap: 20px; /* Space between images */
+}
+
+/* Image Container for Three Images */
+.three-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    animation: img2 5s linear 1s 1 normal forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.profile-pic5 {
-    background-image: url("Code.jpg");
-    background-size: cover;
-    background-position: center;
-    border: 2px solid black;
-    height: 150px;
-    width: 150px;
-    border-radius: 10px;
-    animation: img1 5s linear 1s 1 normal forwards;
+/* For Two Images */
+.two-images img {
+    width: 45%; /* Ensures two images fit side by side */
 }
 
-h4 {
-    font-family: "Pacifico";
+/* For Three Images */
+.three-images img {
+    width: 30%; /* Ensures three images fit side by side */
 }
 
-/* Extra small devices (Very small phones: below 480px) */
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .two-images,
+    .three-images {
+        flex-wrap: wrap;
+    }
+
+    .two-images img,
+    .three-images img {
+        width: 100%; /* Stack images on smaller screens */
+    }
+}
+/* Responsive: Stack images on smaller screens */
+@media (max-width: 768px) {
+    .image-container {
+        flex-wrap: wrap;
+    }
+    .two-images img, 
+    .three-images img {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) {
+    #navbar {
+        gap: 25px; /* Increase gap slightly */
+        height: 85px
+    }
+    #navbar a {
+        font-size: 26px;
+    /* Moderate spacing */
+    }
+    #me{
+        padding-top: 80px;
     }
 }
 
-/* Small devices (Mobile phones: 480px - 768px) */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
+/* Desktops (1024px - 1200px) */
+@media (min-width: 1024px) {
+    #navbar {
+        gap: 45px; /* More spacing for readability */
+        height: 105px;
+        padding-top: 80px;
+    }
+}
+
+/* Large Screens (Above 1200px) */
+@media (min-width: 1200px) {
+    #navbar {
+        gap: 60px; /* Extra spacing for large screens */
+        height: 125px;
     }
 }
 
@@ -218,38 +302,16 @@ h4 {
     }
 }
 
-/* Tablets (768px - 1024px) */
-@media (min-width: 768px) {
-    #navbar {
-        gap: 25px; /* Increase gap slightly */
-        height: 85px;
-    }
-    #navbar a {
-        font-size: 26px; /* Moderate spacing */
-    }
-    #me {
-        padding-top: 85px; /* Match navbar height */
+/* Small devices (Mobile phones: 480px - 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
     }
 }
 
-/* Desktops (1024px - 1200px) */
-@media (min-width: 1024px) {
-    #navbar {
-        gap: 45px; /* More spacing for readability */
-        height: 105px;
-    }
-    #me {
-        padding-top: 105px; /* Match navbar height */
-    }
-}
-
-/* Large Screens (Above 1200px) */
-@media (min-width: 1200px) {
-    #navbar {
-        gap: 60px; /* Extra spacing for large screens */
-        height: 125px;
-    }
-    #me {
-        padding-top: 125px; /* Match navbar height */
+/* Extra small devices (Very small phones: below 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
     }
 }
