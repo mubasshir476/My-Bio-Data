@@ -1,118 +1,168 @@
 .<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mubasshir's Codeverse</title>
-    
-    <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Corinthia:wght@400;700&family=Engagement&family=Luxurious+Script&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <!-- External CSS for Uding Icons -->
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
-    <style>
-  body {
-    filter: blur(15px);
-    opacity: 0;
-    animation: blurIn 3s ease-out forwards;
-  }
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Mubasshir's Codeverse</title>  
 
-  @keyframes blurIn {
-    to {
-      filter: blur(0);
-      opacity: 1;
+<!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Corinthia:wght@400;700&family=Engagement&family=Luxurious+Script&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">  
+    <!-- External CSS for Uding Icons -->  
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  <!-- External CSS -->  
+<link rel="stylesheet" href="style.css">  
+<style>
+
+body {
+filter: blur(15px);
+opacity: 0;
+animation: blurIn 3s ease-out forwards;
+}
+
+@keyframes blurIn {
+to {
+filter: blur(0);
+opacity: 1;
+}
+}
+ /* Center container content */
+.container{
+    text-align:center;
+}
+
+/* Button + hand alignment */
+.btn-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.image-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center ;
+    width:200px;
+    height:45px;
+    background-color:#28a745;
+    color:white;
+    text-decoration:none;
+    font-family :"Ubuntu";
+    font-size:16px;
+    border-radius:25px;
+    font-weight:500;
+    margin-top:15px;
+    transition:0.3s;
+}
+
+.image-btn:hover{
+    background-color:#00401a;
+    transform:scale(1.05);
+}
+/* Moving Hand */
+.hand{
+    font-size:50px;
+    animation:moveHand 0.5s infinite alternate ease-in-out;
+}
+
+/* Left Right Animation */
+@keyframes moveHand{
+    from{
+        transform:translateX(-5px);
     }
-  }
+    to{
+        transform:translateX(5px);
+    }
+}
 </style>
-</head>
-<body>
 
-    <!-- Navbar -->
-  <div id= "navbar">
-  <a href= "index.html">Home</a>
-  <a href="Education.html">Education</a>
-        <a href="application.html"'>Applications</a>
-       <a href="hobbies.html"'>Hobbies</a>
-      <a href="https://chatgpt.com/">Open AI</a>
-     
-  </div>
-    <div id="p">
-    <!-- Switch Box -->
-<div id="switch-box">
-    <p>Switch between Light and Dark modes</p>
-    <label class="switch">
-        <input type="checkbox" id="mode-toggle">
-        <span class="slider"></span>
-    </label>
-</div>
+</head>  
+<body>  <!-- Navbar -->
 
-    <!-- Header -->
-    <header id="header2">
-        <h3>Md. Mubasshir Uddin - Aspiring Web Developer</h3>
-        <h4>Welcome to my Innovations</h4>
-    </header>
-    <!-- Introduction -->
-    <p id="two">
-        Hi, I’m Md. Mubasshir Uddin, a passionate Java developer 
-        with a keen interest in Android development and 
-        problem-solving. I love exploring new technologies, 
-        building applications, and continuously learning to 
-        improve my skills.
+  <div id= "navbar">  
+  <a href= "index.html">Home</a>  
+  <a href="Education.html">Education</a>  
+        <a href="application.html">Applications</a>  
+       <a href="hobbies.html">Hobbies</a>  
+      <a href="https://chatgpt.com/">Open AI</a>    </div>  
+    <div id="p">  
+    <!-- Switch Box -->  
+<div id="switch-box">  
+    <p>Switch between Light and Dark modes</p>  
+    <label class="switch">  
+        <input type="checkbox" id="mode-toggle">  
+        <span class="slider"></span>  
+    </label>  
+</div>  <!-- Header -->  
+<header id="header2">  
+    <h3>Md. Mubasshir Uddin - Aspiring Web Developer</h3>  
+    <h4>Welcome to my Innovations</h4>  
+</header>  
+<!-- Introduction -->  
+<p id="two">  
+    Hi, I’m Md. Mubasshir Uddin, a passionate Java developer   
+    with a keen interest in Android development and   
+    problem-solving. I love exploring new technologies,   
+    building applications, and continuously learning to   
+    improve my skills.  
 
-        On this website, you’ll find insights into my education, 
-        coding experience, and interests. Feel free to explore 
-        and learn more about my journey!
-    </p>
-    <div id ="box">
-    <!-- About Me Section -->
-    <!-- Profile Picture -->
-    <div class="container">
-        <div class="profile-pic"></div>
+    On this website, you’ll find insights into my education,   
+    coding experience, and interests. Feel free to explore   
+    and learn more about my journey!  
+</p>  
+<div id ="box">  
+<!-- About Me Section -->  
+<!-- Profile Picture -->  
+<div class="container">  
+    <div class="profile-pic"></div>  
+</div>  
+       <div class="btn-area">
+        <span class="hand">👉</span>
+
+        <a href="https://ibb.co/XkzPt7Jc" target="_blank" class="image-btn"> View my ICSE Marksheet </a>
     </div>
-    <br />
+<!-- Main Content -->  
+<main>  
+    <section>  
+        <pre id="one">
+<!-- Animated Button -->
 
-    <!-- Main Content -->
-    <main>
-        <section>
-            <pre id="one">
-👋 Hi, I’m Md. Mubasshir Uddin, a student of Class 10 - 
+👋 Hi, I’m Md. Mubasshir Uddin, a student of Class 10 -
 (NOW GIVING THE ICSE)
-   with a passion for Java programming and Android
-   development. I love solving coding challenges and
-   exploring new technologies to improve my skills.    
+with a passion for Java programming and Android
+development. I love solving coding challenges and
+exploring new technologies to improve my skills.
 
-📌 Education: Currently studying at St. Paul’s Mission 
-   School, where I focus on programming and technology.   
+📌 Education: Currently studying at St. Paul’s Mission
+School, where I focus on programming and technology.
 
-💻 Tech Interests: I started my journey with Java and 
-   am now exploring Android development. I enjoy 
-   building applications, problem-solving, and 
-   learning about data structures & algorithms.     
+💻 Tech Interests: I started my journey with Java and
+am now exploring Android development. I enjoy
+building applications, problem-solving, and
+learning about data structures & algorithms.
 
 📚 Beyond Coding: I love reading tech blogs, exploring
-   new software tools, and playing chess, which
-   enhances my logical thinking.      
+new software tools, and playing chess, which
+enhances my logical thinking.
 
 🌟 What You'll Find Here: This website showcases
-   my education, experience, and interests—feel 
-   free to explore and connect with me!
-            </pre>
-        </section>
-    </main>
-    </div>
-    <!-- Footer -->
-    <div id="foot">
-    <footer>
-        <p class="three">© 2025 Md. Mubasshir Uddin | All Rights Reserved</p>    
-        <p class="three" > <i class="fa-brands fa-facebook"></i> Mubasshir Uddin | <i class="fa-brands fa-instagram"></i> mubasshir786uddin </b></p>
-        <p class="three" id="four"><i class="fa-solid fa-phone"></i> 6289540295 | <i class="fa-brands fa-whatsapp"></i> 8240493987 </p>
-        <p class="three"><i class="fa-solid fa-envelope"></i> mohammedmubasshiruddin@gmail.com </p>
-        <p class="three"><i class="fa-solid fa-location-dot"></i> 46 Narkeldanga North Road Kolkata - 700011 </p>
-    </footer>
+my education, experience, and interests—feel
+free to explore and connect with me!
+</pre>
+</section>
+</main>
 </div>
-</div>
-</body>
-</html>
+<!-- Footer -->
+<div id="foot">
+<footer>
+<p class="three">© 2025 Md. Mubasshir Uddin | All Rights Reserved</p>
+<p class="three" > <i class="fa-brands fa-facebook"></i> Mubasshir Uddin | <i class="fa-brands fa-instagram"></i> mubasshir786uddin </b></p>
+<p class="three" id="four"><i class="fa-solid fa-phone"></i> 6289540295 | <i class="fa-brands fa-whatsapp"></i> 8240493987 </p>
+<p class="three"><i class="fa-solid fa-envelope"></i> mohammedmubasshiruddin786@gmail.com </p>
+<p class="three"><i class="fa-solid fa-location-dot"></i> 46 Narkeldanga North Road Kolkata - 700011 </p>
+</footer>
+
+</div>  
+</div>  
+</body>  
+</html>  
