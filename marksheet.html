@@ -1,13 +1,287 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICSE Report Card</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Cream background */
+}
+
+/* Top Navbar */
+.navbar {
+    position: fixed;
+    display: flex;
+    padding: 0 20px; /* Added unit */
+    height: 60px;
+    width: 100%;
+    gap: 15px;
+    background-image: url("coolor.png");
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box; /* Ensures padding doesn’t increase the width */
+    flex-wrap: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Prevents overflow */
+    z-index: 1000;
+    flex-direction: row;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;   /* 🔥 this makes icon go up & text down */
+    align-items: center;      /* center horizontally */
+    justify-content: center;
+    gap: 4px;                 /* small space between icon & text */
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Ubuntu";
+    font-size: 12px;
+}
+
+.nav-item:hover {
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 12px; /* Ensures spacing inside the border */
+}
+    .right-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.page-content {
+    padding: 20px;
+}
+
+/* Report Card */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.report-card {
+    background-color: #0b6b3a;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.report-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+    
+.logo-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.details div {
+    width: 48%;
+}
+
+/* Center Table */
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid #0b6b3a;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0b6b3a;
+    color: white;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: right;
+}
+    .photo-box img {
+    width: 90px;
+    height: 135px;
+    object-fit: cover;
+}
+
+</style>
 </head>
+
 <body>
-  <h1>
-    Hello, World!
-  </h1>
+
+<!-- Top Navbar -->
+<div class="navbar">
+  <a href="index.html" class="nav-item">
+    <i class="fas fa-house"></i>
+    <span>Home</span>
+  </a>
+  <a href="Education.html" class="nav-item">
+    <i class="fas fa-graduation-cap"></i>
+    <span>Education</span>
+  </a>
+  <a href="application.html" class="nav-item">
+    <i class="fas fa-file-alt"></i>
+    <span>Applications</span>
+  </a>
+  <a href="hobbies.html" class="nav-item">
+    <i class="fas fa-gamepad"></i>
+    <span>Hobbies</span>
+  </a>
+  <a href="https://chatgpt.com/" class="nav-item" target="_blank">
+    <i class="fas fa-robot"></i>
+    <span>Open AI</span>
+  </a>
+</div>
+
+<div class="page-content">
+
+<!-- Report Card -->
+<div class="container">
+    <div class="report-card">
+
+        <!-- ICSE Logo -->
+        <div class="logo">
+            <img src="ICSE.jpg" alt="ICSE Logo">
+        </div>
+        <div class="logo-text">
+        Council for the Indian School Certificate Examinations (CISCE)
+    </div>
+
+        <h2>ICSE Class X - Statement of Marks</h2>
+
+        <div class="details">
+
+    <!-- LEFT SIDE (unchanged) -->
+    <div>
+        <p><strong>Name:</strong> Mubasshir Uddin</p>
+        <p><strong>Class:</strong> X</p>
+        <p><strong>School:</strong> St. Paul's Mission School</p>
+    </div>
+
+    <!-- RIGHT SIDE (updated with photo box) -->
+    <div class="right-section">
+        <div>
+            <p><strong>Roll No:</strong> 12345</p>
+            <p><strong>Year:</strong> 2026</p>
+            <p><strong>Board:</strong> ICSE</p>
+        </div>
+
+        <div class="photo-box">
+            <span>Photograph</span>
+            <img src="PP.jpg" alt="Student Photo">
+        </div>
+    </div>
+
+</div>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks Obtained</th>
+                    <th>Maximum Marks</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>92</td>
+                    <td>100</td>
+                    <td>A1</td>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>95</td>
+                    <td>100</td>
+                    <td>A1</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>A1</td>
+                </tr>
+                <tr>
+                    <td>History & Civics</td>
+                    <td>88</td>
+                    <td>100</td>
+                    <td>A2</td>
+                </tr>
+                <tr>
+                    <td>Geography</td>
+                    <td>91</td>
+                    <td>100</td>
+                    <td>A1</td>
+                </tr>
+                <tr>
+                    <td>Computer Applications</td>
+                    <td>96</td>
+                    <td>100</td>
+                    <td>A1</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p><strong>Total:</strong> 552 / 600</p>
+            <p><strong>Percentage:</strong> 92%</p>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
 </body>
 </html>
