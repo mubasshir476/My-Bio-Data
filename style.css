@@ -32,13 +32,21 @@ body{
     box-sizing: border-box; /* Ensures padding doesn’t increase the width */
     flex-wrap: nowrap; /* Prevents text from wrapping */
     overflow: hidden; /* Prevents overflow */
-    z-index: 10000;
+    z-index: 1000;
+    flex-direction: row;
 }
 #navbar a{
+    display: flex;
+    flex-direction: column;   /* 🔥 this makes icon go up & text down */
+    align-items: center;      /* center horizontally */
+    justify-content: center;
+    gap: 4px;                 /* small space between icon & text */
+    color: purple;
     text-decoration: none;
     font-weight: bold;
     font-family: "Ubuntu";
-    
+    font-size: 12px;
+
 }
 img{
     height: 20px;
@@ -61,7 +69,7 @@ img{
     width: 100%;
     margin: 0px auto; /* Center it */
     padding: 0px;
-    
+
 }
 #switch-box p{
     font-family: "Ubuntu";
@@ -78,8 +86,8 @@ img{
     padding: -5px;
     margin: auto;
      margin-bottom : 25px;
-    
-     
+
+
 }
 
 #one{
@@ -267,7 +275,7 @@ body{
     box-sizing: border-box;
     flex-wrap: nowrap;
     overflow: hidden;
-    
+
 }
 
 #navbar a {
@@ -531,13 +539,13 @@ header {
     text-align: center; /* Centers the text */
     padding: 10px 0; /* Adds space inside the header */
     font-size: 20px; /* Adjust font size if needed */
-    
+
 }
 header:hover{
     text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
     cursor: pointer;
 } 
-    
+
 
 /* To prevent content from being hidden behind the fixed header */
 body {
@@ -560,7 +568,7 @@ body {
     width: 100%; /* Ensure full width */
     margin-top: 25px;
     margin-bottom: 15px;
-    
+
 }
 
 /* Styling the circular image */
@@ -574,7 +582,7 @@ body {
     border-radius: 50%;
     animation: rotate-border 10s linear 0s 1 normal;
     z-index: -1;
-    
+
 }
 @keyframes rotate-border {
   0% {
@@ -671,3 +679,4 @@ body {
         display: block;
     }
 }
+
