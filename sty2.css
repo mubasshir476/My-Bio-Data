@@ -41,15 +41,19 @@ h2{
     flex-wrap: nowrap; /* Prevents text from wrapping */
     overflow: hidden; /* Prevents overflow */
     z-index: 1000;
+    flex-direction: row;
 }
 #navbar a {
-    font-family: "Ubuntu";
-    font-weight: bolder;
-    text-decoration: none;
-    /* Ensures elements remain in place */
-    transition: all 0s ease-in-out;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;   /* 🔥 this makes icon go up & text down */
+    align-items: center;      /* center horizontally */
+    justify-content: center;
+    gap: 4px;                 /* small space between icon & text */
     color: beige;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Ubuntu";
+    font-size: 12px;
 }
 .section{
     display: flex;
@@ -75,7 +79,7 @@ h2{
 
 /* Styling for headings */
 h2 {
-        
+
     font-family: "Pacifico";
     font-size: 22px;
     margin: 0;
@@ -137,7 +141,7 @@ h2:hover{
 }
 
 /* General styling for all images */
-.profile-pic, .profile-pic3, .profile-pic4 {
+.profile-pic, .profile-pic3, .profile-pic4, .profile-pic5, .profile-pic6 {
     width: 200px;
     height: 150px;
     background-size: cover;
@@ -187,6 +191,15 @@ h2:hover{
 
 .profile-pic4 {
     background-image: url("Javas.png");
+}
+
+
+.profile-pic5{
+    background-image: url("Py.png");
+}
+
+.profile-pic6{
+    background-image: url("dtp.png");
 }
 
 /* Centering Containers */
