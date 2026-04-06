@@ -1,3 +1,4 @@
+
 /* Apply background color */
 body {
     background-color: rgba(251,233,215,0.50);
@@ -9,7 +10,7 @@ body {
 h2{
     width: 100%;
     padding-top: 150px;
-    
+
 }
 #me{
     padding-top: 70px;
@@ -43,7 +44,7 @@ button{
     color: white;
 }
 #navbar {
-    position: fixed;
+      position: fixed;
     display: flex;
     padding: 0 20px; /* Added unit */
     height: 60px;
@@ -58,8 +59,15 @@ button{
     flex-wrap: nowrap; /* Prevents text from wrapping */
     overflow: hidden; /* Prevents overflow */
     z-index: 1000;
+    flex-direction: row;
 }
 #navbar a{
+    display: flex;
+    flex-direction: column;   /* 🔥 this makes icon go up & text down */
+    align-items: center;      /* center horizontally */
+    justify-content: center;
+    gap: 4px;                 /* small space between icon & text */
+    color: purple;
     text-decoration: none;
     font-weight: bold;
     font-family: "Ubuntu";
@@ -92,7 +100,7 @@ button{
 }
 /* Styling for headings */
 h2 {
-        
+
     font-family: "Pacifico";
     font-size: 22px;
     margin: 0;
