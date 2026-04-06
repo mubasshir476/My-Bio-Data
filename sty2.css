@@ -142,7 +142,7 @@ h2:hover{
 }
 
 /* General styling for all images */
-.profile-pic, .profile-pic3, .profile-pic4 {
+.profile-pic, .profile-pic3, .profile-pic4, .profile-pic5, .profile-pic6 {
     width: 200px;
     height: 150px;
     background-size: cover;
@@ -183,17 +183,24 @@ h2:hover{
 
 /* Set background images for the other profile pictures */
 .profile-pic {
-    background-image: url("Java.jpg");
+    background-image: url("CSS.png");
 }
 
 .profile-pic3 {
-    background-image: url("CSS.png");
+    background-image: url("Java.jpg");
 }
 
 .profile-pic4 {
     background-image: url("Javas.png");
 }
 
+.profile-pic5 {
+    background-image: url("py.png");
+}
+
+.profile-pic6 {
+    background-image: url("dtp.png");
+}
 /* Centering Containers */
 .container, .container2, .container3, .container4 {
     display: flex;
