@@ -13,35 +13,17 @@ h2{
 #me{
     padding-top: 70px;
 }
-.butt{
+#butt{
     background-color: rgba(20,33,61,0.75);
     text-align: center;
-    border: 2px solid white
     border-radius: 40px;
     height: 25px;
     width: 85%;
     font-family: "Ubuntu";
     font-size: 20px;
     border-radius: 15px;
-    color: #E0E0E0;
-}
-button{
-    background-color: rgb(251,233,215);
-    text-align: center;
-    border-radius: 400px;
-    height: 30px;
-    width: 120px;
-    font-family: "Ubuntu";
-    font-size: 13px;
-    border-radius: 15px;
-}
-.abc:hover{
-    background-color: #D62976;
-    color: white;
-}
-.def:hover{
-    background-color: #075E54;
-    color: white;
+    border-color: beige;
+    color: beige;
 }
 #navbar {
     position: fixed;
@@ -50,7 +32,7 @@ button{
     height: 60px;
     width: 100%;
     gap: 15px;
-    background-image: url("coolor.png");
+    background-image: url("C.png");
     background-size: cover;
     justify-content: space-between;
     align-items: center;
@@ -61,8 +43,8 @@ button{
     z-index: 1000;
     flex-direction: row;
 }
-#navbar a{
-    display: flex;
+#navbar a {
+  display: flex;
     flex-direction: column;   /* 🔥 this makes icon go up & text down */
     align-items: center;      /* center horizontally */
     justify-content: center;
@@ -73,12 +55,6 @@ button{
     font-family: "Ubuntu";
     font-size: 12px;
     color: beige;
-}
-#navbar a:hover {
-    padding: 10px;
-    color: burlywood;
-    box-shadow: 0 0 0 2px beige; /* Simulates an outline with rounded corners */
-    background-color: rgba(0, 0, 0, 0.1); /* Optional: Adds a slight background effect */
 }
 .section{
     display: flex;
@@ -92,17 +68,19 @@ button{
     margin: auto;
      margin-bottom : 25px;
     z-index: -2;
-    color: #E0E0E0;
+        color: #E0E0E0;
 }
+
 #navbar a:hover {
-  color: black;
-    border: 2px solid black;
-    border-radius: 5px; /* Rounded corners */
-    padding: 8px 12px; /* Ensures spacing inside the border */
+    padding: 10px;
+    color: burlywood;
+    box-shadow: 0 0 0 2px beige; /* Simulates an outline with rounded corners */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: Adds a slight background effect */
 }
+
 /* Styling for headings */
 h2 {
-
+        
     font-family: "Pacifico";
     font-size: 22px;
     margin: 0;
@@ -121,26 +99,31 @@ h2:hover{
     text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
     cursor: pointer;
 } 
-h4{
-    font-family: "Pacifico";
-}
 @keyframes img1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes img3 {
   0% {
-    transform: translateX(90%);
+    transform: translateY(90%);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-@keyframes img2 {
+@keyframes img4 {
   0% {
-    transform: translateX(-90%);
+    transform: translateY(-90%);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -151,12 +134,16 @@ h4{
     height: 400px;
    /* height: auto;*/
     border-radius: 35px;
+        animation: img3 5s linear 1s 1 normal forwards;
     margin-top: 5px;
+}
+#animate {
+            animation: img4 5s linear 1s 1 normal forwards;
 }
 
 /* General styling for all images */
-.profile-pic, .profile-pic3, .profile-pic4, .profile-pic5 {
-    width: 150px;
+.profile-pic, .profile-pic3, .profile-pic4 {
+    width: 200px;
     height: 150px;
     background-size: cover;
     background-position: center;
@@ -167,28 +154,22 @@ h4{
     animation: img1 5s linear 1s 1 normal forwards;
     margin-bottom: 15px;
 }
-.profile-pic{
-    border-radius: 35px;
-}
-.profile-pic5{
-    background-image: url("Code.jpg");
-  animation:   img1 5s linear 1s 1 normal forwards;
-}
+
 /* Image 2 (HTML) - Different size */
 .profile-pic2 {
     width: 150px;
-    height: 150px;
-    background-image: url("Whatsapp.png");
+    height: 200px;
+    background-image: url("Html.png");
     background-size: cover;
     background-position: center;
     display: block;
     margin: auto;
     border: 2px solid white;
     border-radius: 15px;
-    animation: img2 5s linear 1s 1 normal;
+    animation: img1 5s linear 1s 1 reverse;
 }
 .profile-pic4 {
-    width: 150px;
+    width: 200px;
     height: 150px;
     background-size: cover;
     background-position: center;
@@ -202,15 +183,15 @@ h4{
 
 /* Set background images for the other profile pictures */
 .profile-pic {
-    background-image: url("Instagram.png");
+    background-image: url("Java.jpg");
 }
 
 .profile-pic3 {
-    background-image: url("Bluej.png");
+    background-image: url("CSS.png");
 }
 
 .profile-pic4 {
-    background-image: url("VS Code.png");
+    background-image: url("Javas.png");
 }
 
 /* Centering Containers */
@@ -221,7 +202,7 @@ h4{
     width: 100%;
     margin: 20px 0;
 }
-/* Image Container for Two Images */
+//* Image Container for Two Images */
 .two-images {
     display: flex;
     justify-content: center; /* Center images horizontally */
@@ -265,5 +246,67 @@ img {
     .two-images img,
     .three-images img {
         width: 100%; /* Stack images on smaller screens */
+    }
+}
+/* Responsive: Stack images on smaller screens */
+@media (max-width: 768px) {
+    .image-container {
+        flex-wrap: wrap;
+    }
+    .two-images img, 
+    .three-images img {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) {
+    #navbar {
+        gap: 25px; /* Increase gap slightly */
+        height: 85px
+    }
+    #navbar a {
+        font-size: 26px;
+    /* Moderate spacing */
+    }
+    #me{
+        padding-top: 80px;
+    }
+}
+
+/* Desktops (1024px - 1200px) */
+@media (min-width: 1024px) {
+    #navbar {
+        gap: 45px; /* More spacing for readability */
+        height: 105px;
+        padding-top: 80px;
+    }
+}
+
+/* Large Screens (Above 1200px) */
+@media (min-width: 1200px) {
+    #navbar {
+        gap: 60px; /* Extra spacing for large screens */
+        height: 125px;
+    }
+}
+
+/* Medium devices (Tablets: 768px - 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Small devices (Mobile phones: 480px - 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices (Very small phones: below 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
     }
 }
